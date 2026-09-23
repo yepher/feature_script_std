@@ -1,0 +1,1401 @@
+{
+  "exportedAt": "2026-09-23T01:34:06.025Z",
+  "documentId": "12312312345abcabcabcdeff",
+  "wvm": "v",
+  "wvmId": "cc01d079f5427853fb34b721",
+  "versionName": "3083.0",
+  "source": "https://cad.onshape.com/documents/12312312345abcabcabcdeff/w/a855e4161c814f2e9ab3698a/e/dabd25d0f1a6079cd329d84c",
+  "files": [
+    {
+      "name": "annotationattachmentlocation.gen.fs",
+      "elementId": "dabd25d0f1a6079cd329d84c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "annotationdimensiondirection.gen.fs",
+      "elementId": "14cd44cff0d2a2cb8a86d1c1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "approximationUtils.fs",
+      "elementId": "866b111842256978398f3f88",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "assignReleaseTypeTags.fs",
+      "elementId": "258b0b0212720a0c89ecdd13",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "attributes.fs",
+      "elementId": "04aff5b9a2244f448a633205",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "blendcontroltype.gen.fs",
+      "elementId": "4b5adc449948fd96ab7b2e1b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bodyDraft.fs",
+      "elementId": "cebb5b9425eb0c894549cfdf",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bodydraftconcaverepairtype.gen.fs",
+      "elementId": "6f3781e74e241c330b4480d7",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bodydraftcornertype.gen.fs",
+      "elementId": "10ee30cef89d3f3f4908e3e7",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bodydraftmatchfacetype.gen.fs",
+      "elementId": "c351c3facfa5c6938b7a8f63",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bodydraftselectiontype.gen.fs",
+      "elementId": "f919d50f8fe7d662de09fbbb",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bodyPurposeAttributeUtils.fs",
+      "elementId": "d6041b1f7c5ffce19bab64e5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "boolean.fs",
+      "elementId": "4eea9f271b60454e84089e38",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "booleanaccuracy.gen.fs",
+      "elementId": "4070cc366938c64499892e78",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "booleanHeuristics.fs",
+      "elementId": "59a21e80a2f05753eb21c70e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "booleanoperationtype.gen.fs",
+      "elementId": "458197f69d22454caef8f701",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "boundingtype.gen.fs",
+      "elementId": "0ef5bec0909d4235a5ca1ebb",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "box.fs",
+      "elementId": "dbae58dc711e4c148a8f4353",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bridgingCurve.fs",
+      "elementId": "03857d67401e3f3d767eaa44",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "bsurf.fs",
+      "elementId": "7955b08eb2ab7d8c4c409c0b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "chamfer.fs",
+      "elementId": "8d291ab8b5d84af88a07a6cd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "chamfermethod.gen.fs",
+      "elementId": "b57d9d612a5ba5b490ff98df",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "chamfertype.gen.fs",
+      "elementId": "6dbd5a85782144a68bcdd4db",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "circularPattern.fs",
+      "elementId": "5e639eb1b1834188ae46203a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "clashtype.gen.fs",
+      "elementId": "62e408d723ce415b958f3270",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "common.fs",
+      "elementId": "5d4b86cd6796d30dca2fb617",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "compositeCurve.fs",
+      "elementId": "04fc7c26c5fbe950ba242b24",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "compositePart.fs",
+      "elementId": "ba252ebdab84a97088b88bd9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "computedPartProperty.fs",
+      "elementId": "6e1e18c111c51ba0fb767516",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "constrainedSurface.fs",
+      "elementId": "0e71899789a4f9231b17a016",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "constrainttype.gen.fs",
+      "elementId": "b4277d7ee5ca49a493856c34",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "containers.fs",
+      "elementId": "68f58bc3409644b79ccc306c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "context.fs",
+      "elementId": "1ccf6e5321844da29ab72f2b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "coordinatesysteminferenceselectionfilter.gen.fs",
+      "elementId": "2d55424659249567edeb7591",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "coordSystem.fs",
+      "elementId": "7cc6550b0f384f49bb43e8b1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "cosmeticThreadUtils.fs",
+      "elementId": "c50a2de7090e9ec488a22124",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "cplane.fs",
+      "elementId": "577e2aaf45a542f98d9343c7",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "cpoint.fs",
+      "elementId": "40fb33d37822745ebb0fc59a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "curveextensionendcondition.gen.fs",
+      "elementId": "c5cc20b1e416ba6ab71038f4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "curveextensionshape.gen.fs",
+      "elementId": "0df23d40124f2566acd6f09d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "curveGeometry.fs",
+      "elementId": "c5ff8113357f488da64dfc2a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "curvePattern.fs",
+      "elementId": "d33f2b9b87e40fff6596b80f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "curvepatternorientationtype.gen.fs",
+      "elementId": "c265ab474c24de479b469e02",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "curvetype.gen.fs",
+      "elementId": "9019dcd8c8524b0d898d2a74",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "customStandardContentLibraryValidation.fs",
+      "elementId": "5217fb6b59304e2a2a523fef",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "cutlist.fs",
+      "elementId": "f732ce3a84eca6a45ebfd598",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "cutlistMath.fs",
+      "elementId": "95b1f2bf24198aafa38b6808",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "cylinderCast.fs",
+      "elementId": "a519511812bf1a44bb19b326",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "debug.fs",
+      "elementId": "46edea06688f450f801961e1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "debugcolor.gen.fs",
+      "elementId": "553f26e6997e9c4d2dbfc01a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "decal.fs",
+      "elementId": "41e56a448fe368d294e6cfe3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "decalUtils.fs",
+      "elementId": "d287770bb73c895b3b615958",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "defaultFeatures.fs",
+      "elementId": "02ce59846cd14e99b4ce227f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "deleteBodies.fs",
+      "elementId": "8ea6664e4ccf48efa0ec6ce2",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "deleteFace.fs",
+      "elementId": "4fcf9f158a8e4eaebda661f4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "derive.fs",
+      "elementId": "5538e2f5fb92312cfea27f97",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "derivedMirror.fs",
+      "elementId": "41bb1f0e9c96bc56c4f1e215",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "dimensionalignment.gen.fs",
+      "elementId": "56b23d28eb3a49ceb2b6b290",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "dimensionhalfspace.gen.fs",
+      "elementId": "7a7990302d2c450e863d4164",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "dimensionmeasurementreferencetype.gen.fs",
+      "elementId": "f37807c962e07ad1174b7a57",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "draft.fs",
+      "elementId": "69e25c53fc3840eca5893b85",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "drafttype.gen.fs",
+      "elementId": "ee7a59aedbfdfb0ed5e87949",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "edgeBlendCommon.fs",
+      "elementId": "ecf7740dba703fd61ba84038",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "edgeconvexitytype.gen.fs",
+      "elementId": "ed47acca7fc140c796595b77",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "edgetopology.gen.fs",
+      "elementId": "af1d60c24362507aae5a09af",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "editCurve.fs",
+      "elementId": "9e177b6999d0e4da576abc02",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "enclose.fs",
+      "elementId": "2428edff99ccc9ebb781f4fa",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "endcap.fs",
+      "elementId": "22b6c23a9268d979e22f8344",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "entityinferencetype.gen.fs",
+      "elementId": "61326602c16b4de1a2f15114",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "error.fs",
+      "elementId": "6d8fa7fc7bf040cb8c5e725c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "errorstringenum.gen.fs",
+      "elementId": "ec3745f97ea14e0d875f0a48",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "evaluate.fs",
+      "elementId": "4864e7b2fe044ae09e6406cf",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "expressionvalidationresult.gen.fs",
+      "elementId": "c3900fd0a95f4cb0aa7dd6f0",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extend.fs",
+      "elementId": "cffdc47ca3931d4c4d41ee51",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extendendtype.gen.fs",
+      "elementId": "8ad5cf2c67a019114002f15c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extendsheetboundingtype.gen.fs",
+      "elementId": "0c85e37b662a77ca46ad940f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extendsheetshapetype.gen.fs",
+      "elementId": "d76ca8714bce6d2c72fb8131",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "externalThread.fs",
+      "elementId": "8f7e7d79e6648ba1cd48b5fd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extractsurfaceredundancytype.gen.fs",
+      "elementId": "981b1edf748327b62be0f486",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extrude.fs",
+      "elementId": "aff9bec3150a48098a8184ac",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "extrudeCommon.fs",
+      "elementId": "779e4e2168dfbdd421cdf6ed",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faceBlend.fs",
+      "elementId": "9f2dfffe1ba4d5a357d83099",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faceblendcrosssection.gen.fs",
+      "elementId": "531ae7279a60c99e46c5fb03",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faceblendcrosssectionshape.gen.fs",
+      "elementId": "7548755d6263fc37f1993d7f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faceblendpropagation.gen.fs",
+      "elementId": "326b6b23c00fd2d6b77b1b5d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faceblendtrimtype.gen.fs",
+      "elementId": "154110871053d4250547ffb6",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "facecurvecreationtype.gen.fs",
+      "elementId": "f30ef368b5fcbfed8cd593ff",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faceIntersection.fs",
+      "elementId": "dc2d374abbf6776a636c848b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "faulttype.gen.fs",
+      "elementId": "3a22cca2851e702aef942896",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "feature.fs",
+      "elementId": "c2e68972a0b14c709954d6ca",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "featuredimensiontype.gen.fs",
+      "elementId": "0340b1e467fab93c6747cac2",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "featureList.fs",
+      "elementId": "532a337c28a6fe5a6eacd744",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "featurescriptversionnumber.gen.fs",
+      "elementId": "5a4cf616e5b14bcbb03154b9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "fieldweldflag.gen.fs",
+      "elementId": "72643a56d320ff3bddb57e51",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "fillet.fs",
+      "elementId": "841b26d2621a46bf98eda1d5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "filletcrosssection.gen.fs",
+      "elementId": "bb1ba1f029e6a4913b720824",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "fillSurface.fs",
+      "elementId": "1609b2014b90745ff149a187",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "fitSpline.fs",
+      "elementId": "6e8d96a622de0a7cfb5ddac1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "fittolerancetables.gen.fs",
+      "elementId": "63547d9b2ad0954575543f68",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "fixedparameterposition.gen.fs",
+      "elementId": "86514834404a91538c97406a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "flatOperationType.fs",
+      "elementId": "59196ac3cd00246544c705f3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "formedUtils.fs",
+      "elementId": "5f3106614f70dd207f9e8f74",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "frame.fs",
+      "elementId": "7d39eff85eff86d560b39fd0",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "frameAttributes.fs",
+      "elementId": "434d48af701685a970ed4547",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "frameTrim.fs",
+      "elementId": "0097cdbf0e6bb877a03bb6a9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "frameUtils.fs",
+      "elementId": "f4211fc37f071413a7d15562",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "geometriccontinuity.gen.fs",
+      "elementId": "acb9d8d3e36bd2f6c59a070e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "geometry.fs",
+      "elementId": "b9a58548f6cc4fa7acef723a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "geomOperations.fs",
+      "elementId": "ddbe7e9c67ca4a44935354fa",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "gtolconstrainttype.gen.fs",
+      "elementId": "4a747c8375e166894f9a84d6",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "gtolextendedconstrainttype.gen.fs",
+      "elementId": "9b68ce155c8eb050a615e3f8",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "gusset.fs",
+      "elementId": "e2572c23647afebacc8e0af1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "helix.fs",
+      "elementId": "a80a05e9b600481ba245f9b3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "hole.fs",
+      "elementId": "75b72139bd104b1bbf74528e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holeAttribute.fs",
+      "elementId": "5fcf48cb66a061fc3b60a0a3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holepositionreference.gen.fs",
+      "elementId": "39df3afac6279538bd48c0c9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holeprofiletype.gen.fs",
+      "elementId": "8981ea8abe8bf9c690be78fc",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holepropagationtype.gen.fs",
+      "elementId": "cf4964a790eab4984d7fd59d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holesectionfacetype.gen.fs",
+      "elementId": "91b01f6628d1379f43ae0f43",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holeTable.fs",
+      "elementId": "c2f42855d1225ded9be6506b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holetables.gen.fs",
+      "elementId": "7404cb4ca6ff18ada8fce168",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "holeUtils.fs",
+      "elementId": "35f769732bd47acc2fbcb14e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "icon.gen.fs",
+      "elementId": "439a28b770db621045a9d16c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "imagemappingtype.gen.fs",
+      "elementId": "959aa9bfa3553f909761ee4f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "importDerived.fs",
+      "elementId": "347a20e00cc748938db716a6",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "importForeign.fs",
+      "elementId": "98fe97e44b354b13b737d2b8",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "instantiator.fs",
+      "elementId": "fc465547b6e7c4543820da2d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "isocline.fs",
+      "elementId": "e5b011a4a78d5b3ce3acca6f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "isoparametricCurve.fs",
+      "elementId": "e6cf88cc8ce4455ab330b5e8",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "jogPolygons.fs",
+      "elementId": "64066ccd65a5fd3aa87ae952",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "libraryValidation.fs",
+      "elementId": "9ff4d85d726fe82596089c75",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "LICENSE",
+      "elementId": "9c1fe3c68aae462f90b44036",
+      "type": "BLOB"
+    },
+    {
+      "name": "linearPattern.fs",
+      "elementId": "2ad55c3d15cc45368a53e92c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "loft.fs",
+      "elementId": "0aef2b1033d14885b0266e73",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "lofttopology.gen.fs",
+      "elementId": "b2077a52c9d520f2bda0b236",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "lookupTablePath.fs",
+      "elementId": "13ebf0d4c7f82f6f6f3831f4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "manipulator.fs",
+      "elementId": "1896b9c860a540c48f3dea31",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "manipulatordragtypeenum.gen.fs",
+      "elementId": "82dada4a398d1fb6a6a5ff29",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "manipulatorstyleenum.gen.fs",
+      "elementId": "b288f1db7d5d462fb700b139",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "manipulatortype.gen.fs",
+      "elementId": "b3c95f9f41fc49d48bd919c4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "massProperty.fs",
+      "elementId": "ff3fabe83cda025971f8ef27",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "mateConnector.fs",
+      "elementId": "82a05608e31d46b6988ffde7",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "mateconnectoraxistype.gen.fs",
+      "elementId": "c286c303e24d4255bf459f53",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "matedoftype.gen.fs",
+      "elementId": "cac1280218bc217d7896d326",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "math.fs",
+      "elementId": "8c35c386abc54cc7af7f8a7c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "mathUtils.fs",
+      "elementId": "ba43a5fc50f44cfabadb3a5d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "matrix.fs",
+      "elementId": "ddfe7f76d34e4622a9d69b6a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "matrixWithUnits.fs",
+      "elementId": "ae38bebfd3c8607d6bb6a986",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "metadata.fs",
+      "elementId": "32029212261606cb210c9287",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "mirror.fs",
+      "elementId": "a467826ff0df4970804cbe40",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "modifyFillet.fs",
+      "elementId": "9fa139fb0be24611874fa080",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "moveCurveBoundary.fs",
+      "elementId": "5156171ca2dff4e1afb66614",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "movecurveboundarytype.gen.fs",
+      "elementId": "d580f996f85dab59905c63d1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "moveFace.fs",
+      "elementId": "7edcd76bfb344d97b93a5829",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "mutualTrim.fs",
+      "elementId": "dba2cb40f6128fb6215b4aa2",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "nameEntity.fs",
+      "elementId": "ec0c840897771ac385c9b5ef",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "nurbsUtils.fs",
+      "elementId": "e09693a880994d545b43e60c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "offsetCurveOnFace.fs",
+      "elementId": "796a758013a5141024f894ec",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "offsetcurvetype.gen.fs",
+      "elementId": "de2eb70b7fbcbfd7fbfdcec5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "offsetSurface.fs",
+      "elementId": "d2eb43a944d84c2e47139545",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "origincreationtype.gen.fs",
+      "elementId": "0cb87dff1a72422fbc84f5e5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "partpurpose.gen.fs",
+      "elementId": "1b6c51eddb24f440361ac06a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "partStudio.fs",
+      "elementId": "13138abbdc63f6cf37a73f07",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "partstudioitemtype.gen.fs",
+      "elementId": "fa31b273cf5a324d77de5816",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "path.fs",
+      "elementId": "541ed415686a934607f3e443",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "pattern.fs",
+      "elementId": "426004953ded4dca8014c480",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "patternCommon.fs",
+      "elementId": "6b9125df513067dc8a08b128",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "patternUtils.fs",
+      "elementId": "c27f27a32c1b484b8333e433",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "pcbEnd.fs",
+      "elementId": "7ce6f2078b07b67190d10e60",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "pcbStart.fs",
+      "elementId": "bf8e59eaa5c1fc9033cf2742",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "persistentCoordSystem.fs",
+      "elementId": "669dcbdd2a10b8552de45a7c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "primitives.fs",
+      "elementId": "dc9e71d454d34142ae66df18",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "profilecontrolmode.gen.fs",
+      "elementId": "4bf897bf5f1dda8b20e128ff",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "projectCurves.fs",
+      "elementId": "ed406c2c2cb8da09b7d6c5e6",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "projectiontype.gen.fs",
+      "elementId": "ec739638f0a117a475a744af",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "properties.fs",
+      "elementId": "cc103fba3c348eac3f68de66",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "propertytype.gen.fs",
+      "elementId": "a306525bc0604ebbc0371a18",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "query.fs",
+      "elementId": "9fde5dffaf8d4e4c99aaa22c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "queryVariable.fs",
+      "elementId": "2f3802712bd8620b3f97f4d3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "radiusdisplay.gen.fs",
+      "elementId": "bcb323ec829649ecb3b3cb08",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "README",
+      "elementId": "daec16bcbf3755b1bc852153",
+      "type": "BLOB"
+    },
+    {
+      "name": "recordpatterntype.gen.fs",
+      "elementId": "5848ecaca27364e5dcd23848",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "registerSheetMetalBooleanTools.fs",
+      "elementId": "8f13008615f1941e7ca4132b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "registerSheetMetalFormedTools.fs",
+      "elementId": "2692edb5e6a878a3c3044ebd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "releases.fs",
+      "elementId": "104280ffd3ebe797b0826920",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "replaceFace.fs",
+      "elementId": "5bb9bf6d8b544ce08e7bbea3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "revolve.fs",
+      "elementId": "b29e3c6fee9a45cdb0c1b8d0",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "rib.fs",
+      "elementId": "88905950195fcc6a1eb7cff1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "rotationtype.gen.fs",
+      "elementId": "5e1fada3df174b0e9f70f902",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "routingCurve.fs",
+      "elementId": "0dc790088e5c768286ffe759",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "routingCurveAttributes.fs",
+      "elementId": "a48c7faebebd87ed788c2479",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "ruledSurface.fs",
+      "elementId": "09baebccb794ebb8a89053bc",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "ruledsurfacecornertype.gen.fs",
+      "elementId": "cf661ac29a043a499fc79d1a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "ruledsurfacetype.gen.fs",
+      "elementId": "aacd201f9173e3b49eb115c0",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sectionpart.fs",
+      "elementId": "0b4412195ce044c5bcbf1a8a",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalAttribute.fs",
+      "elementId": "079e7a7434d6d6d257ce71c4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalBend.fs",
+      "elementId": "79aae9754b4dc30288ea5ae9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalBendRelief.fs",
+      "elementId": "79411e0e82e1c7f9d7217662",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalBendUtils.fs",
+      "elementId": "eb091044f72a84739fc06784",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalBuiltIns.fs",
+      "elementId": "d0b6b6ddce3f9eaf84fdaaeb",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalCorner.fs",
+      "elementId": "5eb89c21267a54d77e704240",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalCornerBreak.fs",
+      "elementId": "29c5681cfdb2fadb8e2b2e74",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalCornerBreakAttributeBased.fs",
+      "elementId": "b697c03b6f3e6b23978ad913",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalEnd.fs",
+      "elementId": "71117f3f819aa455757866bd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalFlange.fs",
+      "elementId": "a2594e5a9c489bfbb5ab8533",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalFormed.fs",
+      "elementId": "f2ebdbe97b6e634bff37fdf9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalFormedLibraryValidation.fs",
+      "elementId": "039878d26204b0b4b96a75eb",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalHem.fs",
+      "elementId": "1be7b53034b866b20141a528",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalInFlat.fs",
+      "elementId": "cac4065bea2be328fbe52b6d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalJog.fs",
+      "elementId": "d22dd69673c16d53225c017e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalJoint.fs",
+      "elementId": "be0ff52b0adb7757190df7b0",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalLoft.fs",
+      "elementId": "45d29ee59606aab5fd096119",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalMakeJoint.fs",
+      "elementId": "1d664cfbd4aed0fa8fad363e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalPattern.fs",
+      "elementId": "4a32569c427abd2be2b479bf",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalRip.fs",
+      "elementId": "031340625f297a66ec1b4fe8",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalStart.fs",
+      "elementId": "d72cde0155be691657609507",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalTab.fs",
+      "elementId": "d0b73846dd4acdc82203ae66",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalUnfold.fs",
+      "elementId": "1b0273755811ac770c26bdda",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sheetMetalUtils.fs",
+      "elementId": "459d631d67c38b8d80944f2f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "shell.fs",
+      "elementId": "8ca395d9c7db47e5805098d5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sidegeometryrule.gen.fs",
+      "elementId": "3c3a1c87b8a5b846176e28be",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sketch.fs",
+      "elementId": "a1ec05982b87401dad3728db",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sketchsilhouettedisambiguation.gen.fs",
+      "elementId": "143551335650437f8843e23e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sketchtooltype.gen.fs",
+      "elementId": "876ac5066ad0471bb8633927",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smapplicationtype.gen.fs",
+      "elementId": "7a9d4321e73f3f3d191f9313",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smbendreliefstyle.gen.fs",
+      "elementId": "dc5d36200e683b958b4608fd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smbendtype.gen.fs",
+      "elementId": "0b0b0b567113f1c3c3214dcd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smcornerbreakstyle.gen.fs",
+      "elementId": "aa7f60542056e959313c5c94",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smcornerreliefstyle.gen.fs",
+      "elementId": "11da5d1e50b9e43b0333a6d5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smcornertype.gen.fs",
+      "elementId": "2f383c31b37fcba1b3388ff4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smjointstyle.gen.fs",
+      "elementId": "00296aebc78c1ea6d17daa23",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smjointtype.gen.fs",
+      "elementId": "5432c36bf17203851d943df1",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smobjecttype.gen.fs",
+      "elementId": "9710574b3f9d3f5fbf47b9fe",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "smreliefstyle.gen.fs",
+      "elementId": "1726690f7f345a52c548390f",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "splineUtils.fs",
+      "elementId": "0dd13f15cc529acadc98dcc9",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "splitoperationkeeptype.gen.fs",
+      "elementId": "6520e264ed54f633165a96f4",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "splitpart.fs",
+      "elementId": "748321f899c84fa2958d96c5",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "standardContentUtils.fs",
+      "elementId": "a04f84ccac40e275918d2071",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "standardcontentvaluefieldtype.gen.fs",
+      "elementId": "739059b30cd02f27dbd86f1c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "string.fs",
+      "elementId": "50fecfa4a779479ab19cceed",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "surfaceBoolean.fs",
+      "elementId": "11d6f2fcfb0e001e2c2f76fb",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "surfaceGeometry.fs",
+      "elementId": "84088a0d613e48ca96093b07",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "surfacetype.gen.fs",
+      "elementId": "2a093215086b45519b7540db",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sweep.fs",
+      "elementId": "1094094453bb4339acd8feca",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "sweeptwisttype.gen.fs",
+      "elementId": "f527f6220d5df3c540b395c6",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "table.fs",
+      "elementId": "0bb1ccbe071d83ab5f670342",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "tabletextalignment.gen.fs",
+      "elementId": "dfe7882414cf388803fa8cb8",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "tabReferences.fs",
+      "elementId": "3662889522982032f5938115",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "tag.fs",
+      "elementId": "0ebf144570c405d3151998fa",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "templatestring.fs",
+      "elementId": "d3fc54355ef9aea4afd90434",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "tessellatedloftreturnstatus.gen.fs",
+      "elementId": "cbb5af1e57e846f9022887cf",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "thicken.fs",
+      "elementId": "58ff1936073d4b278a453881",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "tolerance.fs",
+      "elementId": "587cafa3f61f86bf2e0b909c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "toleranceschemaclass.gen.fs",
+      "elementId": "ada718aa602b06e1de252fa6",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "toleranceSchemaValidation.fs",
+      "elementId": "d4246a8c4fdc89e2d50c5eb3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "toleranceTypes.fs",
+      "elementId": "59189068e59fc8a3fa6a0f7e",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "tool.fs",
+      "elementId": "0ff331b203ab4620aed3f966",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "topologymatchtype.gen.fs",
+      "elementId": "e39b0d9917a6048a96491a90",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "topologyUtils.fs",
+      "elementId": "d7bf5b4a972f78db54f09203",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "transform.fs",
+      "elementId": "6d5267035f3b4a908db705cd",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "transformCopy.fs",
+      "elementId": "81869edac6224be29410b2a3",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "transformUV.fs",
+      "elementId": "f56cd06c5bf3f9b41a209320",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "uihint.gen.fs",
+      "elementId": "0117c447f7854b87ba124535",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "units.fs",
+      "elementId": "1d63f39bbbe543ab87196395",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "valueBounds.fs",
+      "elementId": "87b09e244a234eb791b47826",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "variable.fs",
+      "elementId": "357eadcd05424ef4a2360e88",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "variabletype.gen.fs",
+      "elementId": "7f673738e6913ee727a79f1d",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "vector.fs",
+      "elementId": "b81f3a02f1e34b7dab9d239c",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "volumeaccuracy.gen.fs",
+      "elementId": "b98e66f3ed0bd9f7b4b4ee4b",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "weldcontourtype.gen.fs",
+      "elementId": "ece770f1a9e74399bd1e9439",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "weldfinishing.gen.fs",
+      "elementId": "bc6f2917329e95e4075c2366",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "weldjointtype.gen.fs",
+      "elementId": "d97585896b051cc1e2695962",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "weldstandard.gen.fs",
+      "elementId": "b07e9a7da4ba691a92319d29",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "weldtype.gen.fs",
+      "elementId": "ce60eb22fc4a5a5b5cb84518",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "workflow.fs",
+      "elementId": "e55c40f309dc1073b489a1b8",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "wrap.fs",
+      "elementId": "5e2ac00ef43da299ccb2ff00",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "wrapSurface.fs",
+      "elementId": "6f0c4f171ea09db350577341",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "wraptype.gen.fs",
+      "elementId": "3ca3f0740529d1b6c6cd07f1",
+      "type": "FEATURESTUDIO"
+    }
+  ],
+  "failures": []
+}
