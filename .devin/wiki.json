@@ -1,0 +1,315 @@
+{
+  "repo_notes": [
+    {
+      "content": "This repo is a read-only mirror of Onshape's FeatureScript Standard Library (the `onshape/std` namespace), exported tab-by-tab from the public Onshape std document. The primary audience is FeatureScript authors writing custom features in Onshape Feature Studios, not people modifying this repo. Write every page to help a reader USE and UNDERSTAND the library: explain what a module is for, when to reach for it, its key exported functions/types, and show short FeatureScript snippets taken from or modeled on real code in this repo. Always cite the source file (and function name) that each claim comes from."
+    },
+    {
+      "content": "Layout: all library modules live flat at the repo root as `*.fs` files (~200 hand-written modules plus ~100 generated `*.gen.fs` enum files). There are no subdirectories except `tools/` (the export script and update instructions) and `.devin/`. `_export_manifest.json` records the Onshape document/version the files were exported from; `LICENSE` is the MIT license text. Group modules by purpose (the page structure below does this), never alphabetically or by file size."
+    },
+    {
+      "content": "Every file starts with `FeatureScript <N>; /* Automatically generated version */` and imports other modules as `import(path : \"onshape/std/<file>.fs\", version : \"<ver>\")`. `geometry.fs` re-exports the whole feature library and is what most Feature Studios import; `common.fs` re-exports the core runtime without the full feature set. Explain this import model early, because readers will see these paths in their own Feature Studios."
+    },
+    {
+      "content": "`*.gen.fs` files are generated enums marked `/* Automatically generated file -- DO NOT EDIT */`. Do not give each one its own page; describe them alongside the feature or subsystem that consumes them (e.g. `smbendtype.gen.fs` with sheet metal, `debugcolor.gen.fs` with debugging, `uihint.gen.fs` with feature UI) and catalog them on the generated-enum reference page."
+    },
+    {
+      "content": "Key conventions to explain wherever relevant: features are declared with `annotation { \"Feature Type Name\" : ... }` followed by `export const name = defineFeature(function(context is Context, id is Id, definition is map) precondition { ... } { ... })` (see `feature.fs`, `extrude.fs`); low-level geometry operations are the `op*` functions in `geomOperations.fs`, which wrap `@op*` built-ins; geometry is selected with `Query` values built by `q*` functions in `query.fs` and resolved via `evaluate.fs`; errors use `regenError` / `reportFeatureWarning` / `reportFeatureInfo` in `error.fs`; `debug()` in `debug.fs` draws values in the graphics area; lengths/angles are `ValueWithUnits` (`units.fs`) and parameter ranges come from `valueBounds.fs`."
+    },
+    {
+      "content": "Prefer practical explanations over internals. When a module is mostly internal helper code (e.g. `*Utils.fs`, `*Common.fs`, heuristics files), mention it briefly as supporting the user-facing feature rather than documenting every function. Where a user-facing feature exists (Extrude, Fillet, Hole, Flange, Frame...), describe its parameters as they appear in the Onshape UI (from the precondition annotations `\"Name\"`, `\"UIHint\"`, `\"Default\"`) and how to call it from custom FeatureScript."
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "Start-here page: what the FeatureScript Standard Library is, how Onshape Part Studios are built from std features, who this wiki is for, and a reading guide pointing new authors to the Language Primer and Writing a Custom Feature sections and experienced authors to the Feature Reference.",
+      "page_notes": [
+        {
+          "content": "Keep it short and navigational. Include a map of the wiki sections and a table of the most commonly used modules (geometry.fs, common.fs, feature.fs, query.fs, evaluate.fs, geomOperations.fs, sketch.fs, error.fs, debug.fs, units.fs, valueBounds.fs)."
+        }
+      ]
+    },
+    {
+      "title": "How the Library Is Organized",
+      "purpose": "Explain the flat module layout, the import/export model (geometry.fs vs common.fs, `export import`), module version headers, the .gen.fs generated enums, licensing, and how to find the module behind any Onshape feature.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": "Show the import line a Feature Studio uses and walk through how common.fs and geometry.fs re-export other modules. Include a tip on locating a feature's source: search for its `\"Feature Type Name\"` annotation."
+        }
+      ]
+    },
+    {
+      "title": "Keeping This Mirror Up to Date",
+      "purpose": "How this repo is synced from the Onshape std document: tools/LATEST_SCRIPT.js, tools/README.md steps, _export_manifest.json fields, and how version numbers relate to the FeatureScript header.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": "This is maintainer documentation; keep it concise and derived from tools/README.md and tools/LATEST_SCRIPT.js."
+        }
+      ]
+    },
+    {
+      "title": "FeatureScript Language Primer",
+      "purpose": "Language essentials as used in the std library: modules and imports, functions and overloading, `const`/`var`, maps and arrays, `for`/`while`, `try`/`catch`, `export`, annotations, and the documentation comment style (`@param`, `@field`, `@ex`).",
+      "page_notes": [
+        {
+          "content": "Illustrate each concept with short real snippets from containers.fs, math.fs, string.fs and feature.fs. Point readers to Onshape's official FeatureScript docs for full syntax."
+        }
+      ]
+    },
+    {
+      "title": "Types, Predicates and Type Tags",
+      "purpose": "How FeatureScript types work: `type X typecheck canBeX`, predicates, `is` checks, type tags (`as`), and important std types such as Context, Id, Query, Vector, Transform, Plane, Line, Box3d, CoordSystem.",
+      "parent": "FeatureScript Language Primer",
+      "page_notes": [
+        {
+          "content": "Use vector.fs, coordSystem.fs, box.fs, query.fs and context.fs for examples. Include a table of the core types, their defining file and constructor functions."
+        }
+      ]
+    },
+    {
+      "title": "Units, Math and Geometry Values",
+      "purpose": "Working with ValueWithUnits (inch, millimeter, degree...), tolerant comparisons, vectors, matrices, transforms, planes/lines, curve and surface definitions, and math helpers.",
+      "parent": "FeatureScript Language Primer",
+      "page_notes": [
+        {
+          "content": "Cover units.fs, math.fs, mathUtils.fs, vector.fs, matrix.fs, matrixWithUnits.fs, transform.fs, coordSystem.fs, persistentCoordSystem.fs, curveGeometry.fs, surfaceGeometry.fs, box.fs, transformUV.fs. Emphasize common pitfalls such as comparing lengths with tolerantEquals and mixing unitless numbers with lengths."
+        }
+      ]
+    },
+    {
+      "title": "Writing a Custom Feature",
+      "purpose": "Tutorial-style walkthrough of building a custom feature end to end using std: the Feature Studio skeleton, defining parameters, selecting input geometry, creating geometry with op* calls, handling errors, and returning results. Links to the detailed child pages.",
+      "page_notes": [
+        {
+          "content": "Build one small complete example (e.g. a feature that extrudes a selected sketch region by a length and optionally unions it) and explain each line, referencing the real implementations in extrude.fs, feature.fs and boolean.fs."
+        }
+      ]
+    },
+    {
+      "title": "Anatomy of a Feature",
+      "purpose": "defineFeature in depth: the feature annotation keys (Feature Type Name, Filter Selector, Editing Logic Function, Manipulator Change Function), the precondition block, Id and sub-ids (id + \"name\"), startFeature/endFeature, defaults, featureList.fs and defaultFeatures.fs.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Use extrude.fs as the worked example of a full-featured definition and feature.fs for the mechanics."
+        }
+      ]
+    },
+    {
+      "title": "Feature Parameters and UI",
+      "purpose": "Declaring feature parameters in the precondition: parameter annotations (Name, Default, UIHint, Filter, MaxNumberOfPicks), enums as dropdowns, booleans, conditional parameters, length/angle/count bounds from valueBounds.fs, lookup tables, and arrays of parameters.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Reference valueBounds.fs, uihint.gen.fs, lookupTablePath.fs, variabletype.gen.fs and real preconditions from extrude.fs, fillet.fs and hole.fs. Include a cheat sheet table of commonly used UIHints and bound specs (LENGTH_BOUNDS, ANGLE_360_BOUNDS, POSITIVE_COUNT_BOUNDS...)."
+        }
+      ]
+    },
+    {
+      "title": "Selecting Geometry with Queries",
+      "purpose": "The Query system: building queries with q* functions (qCreatedBy, qEverything, qOwnedByBody, qEntityFilter, qUnion, qSubtraction...), entity types and filters, evaluating queries, robust/tracking queries, and topology helpers.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Cover query.fs, queryVariable.fs, evaluate.fs, topologyUtils.fs, nameEntity.fs and the tracking functions in feature.fs (startTracking, makeRobustQuery). Include a recipes table: 'all faces created by this feature', 'edges of a selected face', 'the largest planar face'."
+        }
+      ]
+    },
+    {
+      "title": "Creating Geometry with Operations",
+      "purpose": "The op* operation layer in geomOperations.fs (opExtrude, opRevolve, opBoolean, opFillet, opPlane, opPattern, opTransform...), how they map to @op built-ins, calling std features as sub-features, and boolean handling with processNewBodyIfNeeded.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Explain when to call an op* function vs. an entire std feature (e.g. extrude(context, id + \"ext\", definition)) and how callSubfeatureAndProcessStatus in feature.fs propagates errors. Reference boolean.fs for processNewBodyIfNeeded."
+        }
+      ]
+    },
+    {
+      "title": "Errors, Warnings and Debugging",
+      "purpose": "Throwing regenError, reporting warnings/info, highlighting faulty parameters and entities, ErrorStringEnum, try/catch around operations, and using debug() and DebugColor to visualize queries, vectors, planes and boxes.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Cover error.fs, errorstringenum.gen.fs, debug.fs, debugcolor.gen.fs. Include a short debugging workflow for custom features."
+        }
+      ]
+    },
+    {
+      "title": "Manipulators and Editing Logic",
+      "purpose": "Interactive behavior: adding manipulators (linear, angular, flip, points), handling the manipulator change function, and editing logic functions that update parameters as the user edits.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Cover manipulator.fs and manipulator*.gen.fs using extrudeManipulatorChange and extrudeEditLogic in extrude.fs as the worked example."
+        }
+      ]
+    },
+    {
+      "title": "Attributes, Variables and Properties",
+      "purpose": "Storing data on geometry and in the context: setAttribute/getAttributes, variables (setVariable/getVariable, Variable feature), part properties and computed part properties, tags, body purpose, and mass properties.",
+      "parent": "Writing a Custom Feature",
+      "page_notes": [
+        {
+          "content": "Cover attributes.fs, context.fs (variables), variable.fs, properties.fs, computedPartProperty.fs, tag.fs, bodyPurposeAttributeUtils.fs, massProperty.fs, templatestring.fs."
+        }
+      ]
+    },
+    {
+      "title": "Standard Feature Reference",
+      "purpose": "Index of the built-in Onshape features implemented in std, grouped by category, with a table mapping each Onshape UI feature name to its source file and exported function name.",
+      "page_notes": [
+        {
+          "content": "Generate the table from `\"Feature Type Name\"` annotations across *.fs files. Child pages go deeper per category."
+        }
+      ]
+    },
+    {
+      "title": "Sketches, Planes and Reference Geometry",
+      "purpose": "Sketching from FeatureScript (newSketch, sketch entities, constraints, skSolve), construction planes, points, mate connectors, coordinate systems, and section/part studio helpers.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover sketch.fs, cplane.fs, cpoint.fs, mateConnector.fs, coordSystem.fs, partStudio.fs, sectionpart.fs and related enums (constrainttype, sketchtooltype, mateconnectoraxistype, origincreationtype)."
+        }
+      ]
+    },
+    {
+      "title": "Extrude, Revolve, Sweep, Loft and Primitives",
+      "purpose": "Solid and surface creation features: extrude, revolve, sweep, loft, rib, thicken, enclose, primitives, helix, and their shared helpers and end conditions.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover extrude.fs, extrudeCommon.fs, endcap.fs, revolve.fs, sweep.fs, loft.fs, rib.fs, thicken.fs, enclose.fs, primitives.fs, helix.fs, cylinderCast.fs, and enums boundingtype, lofttopology, sweeptwisttype, profilecontrolmode."
+        }
+      ]
+    },
+    {
+      "title": "Booleans, Split, Delete and Transform",
+      "purpose": "Body-level operations: boolean union/subtract/intersect, boolean heuristics, surface booleans, split part, delete bodies/faces, transform and transform-copy, composite parts.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover boolean.fs, booleanHeuristics.fs, surfaceBoolean.fs, splitpart.fs, deleteBodies.fs, deleteFace.fs, transform.fs, transformCopy.fs, compositePart.fs, and enums booleanoperationtype, booleanaccuracy, splitoperationkeeptype."
+        }
+      ]
+    },
+    {
+      "title": "Fillets, Chamfers, Draft, Shell and Face Edits",
+      "purpose": "Edge and face modification features: fillet, face blend, modify fillet, chamfer, draft, body draft, shell, move face, replace face, and their option enums.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover fillet.fs, edgeBlendCommon.fs, faceBlend.fs, modifyFillet.fs, chamfer.fs, draft.fs, bodyDraft.fs, shell.fs, moveFace.fs, replaceFace.fs, and enums filletcrosssection, blendcontroltype, faceblend*, chamfer*, drafttype, bodydraft*."
+        }
+      ]
+    },
+    {
+      "title": "Patterns and Mirrors",
+      "purpose": "Linear, circular and curve patterns, the shared pattern framework (feature/face/part patterns, instance transforms, skipping instances), mirror and derived mirror.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover linearPattern.fs, circularPattern.fs, curvePattern.fs, pattern.fs, patternCommon.fs, patternUtils.fs, mirror.fs, derivedMirror.fs and the pattern-instance functions in feature.fs (getFullPatternTransform, setFeaturePatternInstanceData)."
+        }
+      ]
+    },
+    {
+      "title": "Curves and Splines",
+      "purpose": "Curve creation and editing features and spline utilities: bridging curve, composite curve, fit spline, edit curve, move curve boundary, project curves, isoparametric curves, isocline, offset curve on face, face intersection, routing curve, and NURBS/B-spline helpers.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover bridgingCurve.fs, compositeCurve.fs, fitSpline.fs, editCurve.fs, moveCurveBoundary.fs, projectCurves.fs, isoparametricCurve.fs, isocline.fs, offsetCurveOnFace.fs, faceIntersection.fs, routingCurve.fs, routingCurveAttributes.fs, path.fs, approximationUtils.fs, splineUtils.fs, nurbsUtils.fs. Keep approximation internals to a short subsection."
+        }
+      ]
+    },
+    {
+      "title": "Surfacing",
+      "purpose": "Surface features: fill, offset, ruled, constrained surface, boundary surfaces via bsurf, extend, mutual trim, wrap and wrap surface.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover fillSurface.fs, offsetSurface.fs, ruledSurface.fs, constrainedSurface.fs, bsurf.fs, extend.fs, mutualTrim.fs, wrap.fs, wrapSurface.fs, and enums geometriccontinuity, ruledsurface*, extend*, wraptype."
+        }
+      ]
+    },
+    {
+      "title": "Import, Derive, Decals and PCB",
+      "purpose": "Features that bring in or decorate external content: derived parts, imported/foreign data, instantiator, decals and image mapping, and PCB start/end features.",
+      "parent": "Standard Feature Reference",
+      "page_notes": [
+        {
+          "content": "Cover derive.fs, importDerived.fs, importForeign.fs, instantiator.fs, decal.fs, decalUtils.fs, imagemappingtype.gen.fs, pcbStart.fs, pcbEnd.fs. Explain instantiator as the way to reuse parts from other Part Studios in custom features."
+        }
+      ]
+    },
+    {
+      "title": "Sheet Metal",
+      "purpose": "How sheet metal works in std: the sheet metal model vs. flat pattern, sheetMetalStart/End, sheet metal attributes and the underlying definition bodies, joints, unfolding, and editing in the flat.",
+      "page_notes": [
+        {
+          "content": "Cover sheetMetalStart.fs, sheetMetalEnd.fs, sheetMetalAttribute.fs, sheetMetalUtils.fs, sheetMetalBuiltIns.fs, sheetMetalJoint.fs, sheetMetalMakeJoint.fs, sheetMetalUnfold.fs, sheetMetalInFlat.fs, flatOperationType.fs, registerSheetMetal*Tools.fs. Include a diagram of the lifecycle and explain why sheet metal features must check/maintain the attribute model."
+        }
+      ]
+    },
+    {
+      "title": "Sheet Metal Features",
+      "purpose": "Reference for individual sheet metal features: flange, bend, bend relief, hem, jog, tab, rip, corner and corner break, sheet metal loft, pattern and formed features.",
+      "parent": "Sheet Metal",
+      "page_notes": [
+        {
+          "content": "Cover sheetMetalFlange.fs, sheetMetalBend*.fs, sheetMetalHem.fs, sheetMetalJog.fs, jogPolygons.fs, sheetMetalTab.fs, tabReferences.fs, sheetMetalRip.fs, sheetMetalCorner*.fs, sheetMetalLoft.fs, sheetMetalPattern.fs, sheetMetalFormed.fs, formedUtils.fs, sheetMetalFormedLibraryValidation.fs, and the sm*.gen.fs enums."
+        }
+      ]
+    },
+    {
+      "title": "Frames, Weldments and Cut Lists",
+      "purpose": "Frame (structural member) features: frame profiles and paths, trimming, gussets, frame attributes, cut lists and their math, and weld-related enums.",
+      "page_notes": [
+        {
+          "content": "Cover frame.fs, frameUtils.fs, frameTrim.fs, frameAttributes.fs, gusset.fs, cutlist.fs, cutlistMath.fs and weld*.gen.fs / fieldweldflag.gen.fs."
+        }
+      ]
+    },
+    {
+      "title": "Holes, Threads and Tables",
+      "purpose": "Hole feature (types, standards, tapped/counterbore/countersink), hole attributes and hole tables, cosmetic and external threads, and the Part Studio table framework for custom tables.",
+      "parent": "Frames, Weldments and Cut Lists",
+      "page_notes": [
+        {
+          "content": "Cover hole.fs, holeUtils.fs, holeAttribute.fs, holeTable.fs, holetables.gen.fs, hole*.gen.fs, cosmeticThreadUtils.fs, externalThread.fs, fittolerancetables.gen.fs, table.fs, tabletextalignment.gen.fs. Show how a custom FeatureScript table is defined with table.fs."
+        }
+      ]
+    },
+    {
+      "title": "Metadata, Releases and Standard Content",
+      "purpose": "Non-geometric subsystems: part metadata and properties, release and workflow typing, tolerances and GD&T types, standard content libraries and their validation.",
+      "page_notes": [
+        {
+          "content": "Cover metadata.fs, properties.fs, releases.fs, workflow.fs, assignReleaseTypeTags.fs, tolerance.fs, toleranceTypes.fs, toleranceSchemaValidation.fs, standardContentUtils.fs, libraryValidation.fs, customStandardContentLibraryValidation.fs, gtol*.gen.fs, standardcontentvaluefieldtype.gen.fs."
+        }
+      ]
+    },
+    {
+      "title": "Generated Enum Reference",
+      "purpose": "Catalog of all *.gen.fs enum files grouped by the subsystem that uses them, what each enum controls, and the DO-NOT-EDIT/versioning contract for generated files.",
+      "page_notes": [
+        {
+          "content": "Present as grouped tables (Feature UI, Geometry/Topology, Blends & Draft, Sheet Metal, Weld & Frame, Holes, Annotations/Dimensions, Manipulators, Misc) with enum name, file, and one-line meaning. Note that some .gen.fs files carry an older FeatureScript version header than hand-written modules."
+        }
+      ]
+    },
+    {
+      "title": "Cookbook: Common Recipes",
+      "purpose": "Short, copy-ready FeatureScript recipes built on std: extrude a sketch region, fillet all edges of new bodies, pattern a body along a curve, find the largest planar face, create a plane from a face, attach and read attributes, report a warning with highlighted entities, and set a variable for downstream features.",
+      "page_notes": [
+        {
+          "content": "Each recipe: goal, snippet (10-30 lines), and links to the std functions used. Only use functions that actually exist in this repo; verify signatures against the source."
+        }
+      ]
+    }
+  ]
+}
