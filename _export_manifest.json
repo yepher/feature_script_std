@@ -1,10 +1,10 @@
 {
-  "exportedAt": "2026-09-23T01:34:06.025Z",
+  "exportedAt": "2026-10-30T17:35:03.941Z",
   "documentId": "12312312345abcabcabcdeff",
   "wvm": "v",
-  "wvmId": "cc01d079f5427853fb34b721",
-  "versionName": "3083.0",
-  "source": "https://cad.onshape.com/documents/12312312345abcabcabcdeff/w/a855e4161c814f2e9ab3698a/e/dabd25d0f1a6079cd329d84c",
+  "wvmId": "c31f2dcea3a7abd54f9bf94c",
+  "versionName": "3112.0",
+  "source": "https://cad.onshape.com/documents/12312312345abcabcabcdeff/v/e3a9bebd99ad03eab7229c12/e/2692edb5e6a878a3c3044ebd",
   "files": [
     {
       "name": "annotationattachmentlocation.gen.fs",
@@ -149,6 +149,11 @@
     {
       "name": "computedPartProperty.fs",
       "elementId": "6e1e18c111c51ba0fb767516",
+      "type": "FEATURESTUDIO"
+    },
+    {
+      "name": "configurationInfo.fs",
+      "elementId": "d6d326ce663f5e0e1b0cdfc7",
       "type": "FEATURESTUDIO"
     },
     {
@@ -907,7 +912,7 @@
       "type": "FEATURESTUDIO"
     },
     {
-      "name": "README",
+      "name": "README.pdf",
       "elementId": "daec16bcbf3755b1bc852153",
       "type": "BLOB"
     },
