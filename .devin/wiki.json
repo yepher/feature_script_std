@@ -289,7 +289,7 @@
       "purpose": "Non-geometric subsystems: part metadata and properties, release and workflow typing, tolerances and GD&T types, standard content libraries and their validation.",
       "page_notes": [
         {
-          "content": "Cover metadata.fs, properties.fs, releases.fs, workflow.fs, assignReleaseTypeTags.fs, tolerance.fs, toleranceTypes.fs, toleranceSchemaValidation.fs, standardContentUtils.fs, libraryValidation.fs, customStandardContentLibraryValidation.fs, gtol*.gen.fs, standardcontentvaluefieldtype.gen.fs."
+          "content": "Cover metadata.fs, properties.fs, releases.fs, workflow.fs, assignReleaseTypeTags.fs, tolerance.fs, toleranceTypes.fs, toleranceSchemaValidation.fs, standardContentUtils.fs, libraryValidation.fs, configurationInfo.fs, customStandardContentLibraryValidation.fs, gtol*.gen.fs, standardcontentvaluefieldtype.gen.fs."
         }
       ]
     },
